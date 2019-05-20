@@ -12,7 +12,7 @@
 
   			<form class="search" method="get" action="https://echo.htmlacademy.ru">
   				<button class="search-button" type="submit"  aria-label="Поиск"></button>
-          		<input type="search" name="search" placeholder="Поиск:">
+          		<input type="search" name="search" placeholder="Поиск:" aria-label="Поле поиска">
   			</form>
 
   			<a href="#">Закладки</a>
@@ -22,16 +22,17 @@
 
 		<div class="header-down">
 			<div class="header-information">
-			<h1>Интернет-магазин строительных материалов и инструментов для ремонта</h1>
-			<p class="contacts">
-				<span>+7 (812) 555-05-55</span><br>
-				г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
-			</p>
-			<ul class="user-navigation">
-				<li><a href="#">Войти</a></li>
-				<li><a href="#">Регистрация</a></li>
-			</ul>
+				<h1>Интернет-магазин строительных материалов и инструментов для ремонта</h1>
+				<p class="contacts">
+					<span>+7 (812) 555-05-55</span><br>
+					г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+				</p>
+				<ul class="user-navigation">
+					<li><a href="#">Войти</a></li>
+					<li><a href="#">Регистрация</a></li>
+				</ul>
 			</div>
+
 			<nav class="site-menu">
 				<ul class="menu-items">
 					<li><a href="#">Главная</a></li>
@@ -120,32 +121,40 @@
   		</div>
   	</footer>
 
-    <form class="write-message" method="get" action="https://echo.htmlacademy.ru">
-      	<p class="appoitment-item">
-        	<label>Ваше имя
-          		<input type="text" name="name" placeholder="Имя и Фамилия">
-        	</label>
-     	 </p>
+  	<div class="modal modal-write-message">
+  		<h2 class="visually-hidden">Написать письмо</h2>
+    	<form class="write-message" method="get" action="https://echo.htmlacademy.ru">
+      		<p class="appoitment-item">
+        		<label>Ваше имя
+          			<input type="text" name="name" placeholder="Имя и Фамилия">
+        		</label>
+     	 	</p>
 
-      	<p class="appoitment-item">
-       	 	<label>Ваш e-mail
-          		<input type="email" name="email" placeholder="email@example.com">
-        	</label>
-      	</p>
+      		<p class="appoitment-item">
+       	 		<label>Ваш e-mail
+          			<input type="email" name="email" placeholder="email@example.com">
+        		</label>
+      		</p>
 
-      	<p class="appoitment-item">
-        	<label>Текст письма
-          		<textarea name="text" placeholder="В свободной форме">
-          		</textarea>
-        	</label>
-      	</p>
+      		<p class="appoitment-item">
+        		<label>Текст письма
+          			<textarea name="text" placeholder="В свободной форме">
+          			</textarea>
+        		</label>
+      		</p>
 
-      	<p class="write-message-button">
-        	<button type="submit" name="send-button">Отправить</button>
-      	</p>
+      		<p class="send-message-button">
+        		<button class="send-button" type="submit" name="send-button">Отправить</button>
+      		</p>
+    	</form>
 
-      	<button class="close" type="button">Закрыть</button>
-    </form>
-  	
+    	<button class="modal-close" type="button">Закрыть</button>
+    </div>
+
+    <div class="modal modal-map">
+    	<h2 class="visually-hidden">Большая карта</h2>
+    	<img src="img/map-big.jpg" width="1376" height="779" alt="Офис компании по адресу ул. Большая конюшенная, д. 19, Санкт-Петрербург">
+    	<button class="modal-close" type="button">Закрыть</button>
+    </div>
   </body>
 </html>
