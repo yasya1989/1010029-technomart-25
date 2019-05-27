@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Яся Дранишникова](https://up.htmlacademy.ru/htmlcss/25/user/1010029).
-* Наставник: [Игорь Соболь] (https://htmlacademy.ru/profile/dominussobol).
+* Наставник: [Игорь Соболь](https://htmlacademy.ru/profile/dominussobol).
 
 ---
 
