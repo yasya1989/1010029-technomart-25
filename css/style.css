@@ -34,7 +34,6 @@ label {
 
 .header-top {
   margin-bottom: 46px;
-  min-height: 42px;
   display: flex;
 
   font-size: 17px;
@@ -93,7 +92,6 @@ label {
 /*HEADER-DOWN*/
 
 .header-information {
-  min-height: 158px;
   display: flex;
   justify-content: space-around;
 }
@@ -182,7 +180,6 @@ label {
   margin-left: 130px;
   margin-right: 130px;
   margin-bottom: 60px;
-  min-height: 60px;
   font-size: 17px;
   line-height: 17px;
 
@@ -194,7 +191,6 @@ label {
   padding: 0;
   margin: 0;
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-around;
 
   padding-top: 22px;
@@ -246,6 +242,15 @@ label {
   font-family: "Cuprum", Arial, sans-serif;
 
   background-color: #ee3643;
+}
+
+.button-about-company:hover,
+.button-about-company:focus {
+  background-color: #ca2c37;
+}
+
+.button-about-company:active {
+  background-color: #ba2732;
 }
 
 .breadcrumbs {
@@ -376,9 +381,11 @@ label {
   line-height: 24px;
   color: #ffffff;
 
-  list-style: none;
-
   background-color: #32425c;
+}
+
+.site-footer ul {
+  list-style: none;
 }
 
 /*FOOTER-TOP*/
@@ -408,6 +415,10 @@ label {
   line-height: 18px;
 
   background-color: #293449;
+}
+
+.footer-social {
+  list-style: none;
 }
 
 .social-button {
