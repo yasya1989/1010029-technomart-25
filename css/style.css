@@ -30,10 +30,15 @@ label {
   background-color: #f3f7f8;
 }
 
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
 /*HEADER-TOP*/
 
 .header-top {
-  margin-bottom: 46px;
+  padding: 0 10px;
   display: flex;
 
   font-size: 17px;
@@ -46,21 +51,28 @@ label {
   color: #ffffff;
 }
 
-.header-top a:active:not(:first-of-type):not(.place-order) {
-  color: rgba(255, 255, 255, 0.6);
-  background-color: #161d29; 
+.site-logo {/*Здесь так можно отступы внутренние сделать?*/
+padding-left: 55px;
+padding-right: 55px;
+padding-top: 12px;
+padding-bottom: 16px;
+
+background-color: #ee3643;
+box-shadow: inset 0px -5px 0px 0px #b52933;
 }
 
-.site-logo {
-  text-transform: uppercase;
-  color: #ffffff;
+.site-logo:hover,
+.site-logo:focus {
+  background-color: #ca2c37;
+} 
 
-  background-color: #ee3643;
-  box-shadow: inset 0px -2px 0px 0px #b52933;
+.site-logo:active {
+  background-color: #ba2732;
 }
 
 .search-button {
   background-color: #293449;
+
   border: none;
 }
 
@@ -68,17 +80,38 @@ label {
   color: #ffffff;
   
   background-color: #293449;
+
   border: none;
 }
 
+.search input:hover,
+.search input:focus {
+  color: #000000;
+  
+  background-color: #ffffff;
+}
+
+.search
 ::-webkit-input-placeholder {color:#ffffff; opacity:1;}/* webkit */
 ::-moz-placeholder          {color:#ffffff; opacity:1;}/* Firefox 19+ */
 :-moz-placeholder           {color:#ffffff; opacity:1;}/* Firefox 18- */
 :-ms-input-placeholder      {color:#ffffff; opacity:1;}/* IE */
 
+.header-interactive:hover,
+.header-interactive:focus {
+  background-color: #212a3a;
+}
+
+.header-interactive:active {
+  color: rgba(255, 255, 255, 0.6);
+
+  background-color: #161d29;
+}
+
 .place-order {
   background-color: #63a63e;
 }
+
 .place-order:hover,
 .place-order:focus {
   background-color: #5fbb2d;
@@ -86,6 +119,7 @@ label {
 
 .place-order:active {
   color: rgba(255, 255, 255, 0.6);
+
   background-color: #518534;
 }
 
@@ -104,7 +138,6 @@ label {
 }
 
 .contacts {
-  min-width: 101px;
   font-size: 14px;
   line-height: 24px;
 }
@@ -143,6 +176,10 @@ label {
   color: rgba(0, 0, 0, 0.3);
 }
 
+.personal-information ul {
+  list-style: none;
+}
+
 .account a {
   font-size: 21px;
   line-height: 21px;
@@ -151,8 +188,8 @@ label {
   background-color: #ffffff;
 }
 
-.personal-information ul {
-  list-style: none;
+.account a:active {
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .choice-user a {
@@ -168,7 +205,6 @@ label {
   color: #ee3643;
 }
 
-.account a:active,
 .choice-user a:active {
   color: rgba(0, 0, 0, 0.3);
 }
@@ -177,9 +213,6 @@ label {
 
 .site-menu {
   padding: 0;
-  margin-left: 130px;
-  margin-right: 130px;
-  margin-bottom: 60px;
   font-size: 17px;
   line-height: 17px;
 
