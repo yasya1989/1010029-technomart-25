@@ -25,37 +25,38 @@ label {
 
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
 
   background-color: #f3f7f8;
 }
 
-.container {
-  width: 1200px;
+.site-header-wrapper {
+  width: 100%;
+
+  background-color: #293449;
+}
+
+.container-wrapper {
+  width: 960px;
+  padding: 0 10px;
   margin: 0 auto;
 }
 
 /*HEADER-TOP*/
 
 .header-top {
-  padding: 0 10px;
-  display: flex;
-
   font-size: 17px;
   line-height: 18px;
-
-  background-color: #293449;
+  display: flex;
+  justify-content: space-between;
 }
 
 .header-top a {
   color: #ffffff;
 }
 
-.site-logo {/*Здесь так можно отступы внутренние сделать?*/
-padding-left: 55px;
-padding-right: 55px;
-padding-top: 12px;
-padding-bottom: 16px;
+.site-logo {
+width: 220px;
+margin-right: 10px;
 
 background-color: #ee3643;
 box-shadow: inset 0px -5px 0px 0px #b52933;
@@ -70,7 +71,15 @@ box-shadow: inset 0px -5px 0px 0px #b52933;
   background-color: #ba2732;
 }
 
+form.search {
+  display: flex;
+  flex-direction: row-reverse;
+  width: 240px;
+  margin-right: 10px;
+}
+
 .search-button {
+  color: #6a7180;
   background-color: #293449;
 
   border: none;
@@ -78,24 +87,34 @@ box-shadow: inset 0px -5px 0px 0px #b52933;
 
 .search input {
   color: #ffffff;
-  
   background-color: #293449;
 
   border: none;
 }
 
-.search input:hover,
 .search input:focus {
   color: #000000;
   
   background-color: #ffffff;
 }
 
-.search
-::-webkit-input-placeholder {color:#ffffff; opacity:1;}/* webkit */
-::-moz-placeholder          {color:#ffffff; opacity:1;}/* Firefox 19+ */
-:-moz-placeholder           {color:#ffffff; opacity:1;}/* Firefox 18- */
-:-ms-input-placeholder      {color:#ffffff; opacity:1;}/* IE */
+.search input:hover ~ .search-button {
+  color: #ffffff;
+}
+
+.search input:focus ~ .search-button {
+  color: #ee3643;
+  background-color: #ffffff;
+}
+
+.search input::-webkit-input-placeholder {color:#ffffff; opacity:1;}/* webkit */
+.search input::-moz-placeholder          {color:#ffffff; opacity:1;}/* Firefox 19+ */
+.search input:-moz-placeholder           {color:#ffffff; opacity:1;}/* Firefox 18- */
+.search input:-ms-input-placeholder      {color:#ffffff; opacity:1;}/* IE */
+
+.header-interactive {
+  width: 150px;
+}
 
 .header-interactive:hover,
 .header-interactive:focus {
@@ -109,6 +128,9 @@ box-shadow: inset 0px -5px 0px 0px #b52933;
 }
 
 .place-order {
+  width: 150px;
+  margin-left: 10px;
+
   background-color: #63a63e;
 }
 
@@ -125,21 +147,35 @@ box-shadow: inset 0px -5px 0px 0px #b52933;
 
 /*HEADER-DOWN*/
 
-.header-information {
+.header-down-container {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.header-information {
+  margin-top: 46px;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .header-information h1 {
+  width: 300px;
+  margin-right: 20px;
   font-size: 16px;
   line-height: 23px;
   font-style: italic;
   color: #ee3643;
+
 }
 
 .contacts {
+  width: 300px;
+  margin-right: 20px;
   font-size: 14px;
   line-height: 24px;
+
 }
 
 .contacts span {
@@ -151,9 +187,11 @@ box-shadow: inset 0px -5px 0px 0px #b52933;
 }
 
 .user-navigation {
+  width: 300px;
   padding: 0;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 
   font-size: 21px;
   line-height: 21px;
@@ -162,9 +200,20 @@ box-shadow: inset 0px -5px 0px 0px #b52933;
 }
 
 .user-navigation a {
+  display: block;
   color: #000000;
 
   background-color: #ffffff;
+}
+
+.enter {
+  width: 120px;
+  margin-left: 20px;
+}
+
+.registration {
+  margin-left: 10px;
+  width: 150px;
 }
 
 .user-navigation a:hover,
@@ -176,11 +225,12 @@ box-shadow: inset 0px -5px 0px 0px #b52933;
   color: rgba(0, 0, 0, 0.3);
 }
 
-.personal-information ul {
-  list-style: none;
+.personal-information {
+  width: 300px;
 }
 
 .account a {
+  display: block;
   font-size: 21px;
   line-height: 21px;
   color: #000000;
@@ -192,7 +242,17 @@ box-shadow: inset 0px -5px 0px 0px #b52933;
   color: rgba(0, 0, 0, 0.3);
 }
 
+.personal-information ul {
+  padding: 0;
+  list-style: none;
+}
+
+.personal-information li {
+  display: inline-block;
+}
+
 .choice-user a {
+  
   font-size: 16px;
   line-height: 18px;
   color: #32425c;
@@ -213,6 +273,7 @@ box-shadow: inset 0px -5px 0px 0px #b52933;
 
 .site-menu {
   padding: 0;
+  margin-bottom: 60px;
   font-size: 17px;
   line-height: 17px;
 
@@ -248,6 +309,8 @@ box-shadow: inset 0px -5px 0px 0px #b52933;
 /*ABOUT-COMPANY CONTACTS*/
 
 .about-company {
+  display: flex;
+  justify-content: space-between;
   font-size: 13px;
   line-height: 24px;
   font-weight: 700;
@@ -261,10 +324,18 @@ box-shadow: inset 0px -5px 0px 0px #b52933;
   text-transform: uppercase;
 }
 
+.company-information {
+  width: 540px;
+}
+
 .transport {
   font-size: 18px;
   line-height: 20px;
   font-family: "Cuprum", Arial, sans-serif;
+}
+
+.contacts-map {
+  width: 320px;
 }
 
 .button-about-company {
@@ -307,7 +378,13 @@ box-shadow: inset 0px -5px 0px 0px #b52933;
 
 /*FILTRES*/
 
+.filtres-catalog {
+  display: flex;
+  justify-content: space-between;
+}
+
 .filtres {
+  width: 220px;
   font-size: 15px;
   line-height: 20px;
   font-family: "PT Sans", Arial, sans-serif;
@@ -341,6 +418,11 @@ box-shadow: inset 0px -5px 0px 0px #b52933;
 /*CATALOG-LIST*/
 
 .catalog-list {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
   font-size: 18px;
   line-height: 20px;
   font-family: "PT Sans", Arial, sans-serif;
@@ -349,6 +431,8 @@ box-shadow: inset 0px -5px 0px 0px #b52933;
 }
 
 .catalog-list li {
+  margin-left: 20px;
+  width: 220px;
   border: 1px solid #e5e5e5;
 }
 
@@ -397,7 +481,7 @@ box-shadow: inset 0px -5px 0px 0px #b52933;
   border: 2px solid rgba(50, 66, 92, 0.3);
 }
 
-.alt-price {
+.old-price {
   color: #999999;
   text-decoration: line-through;
 }
@@ -410,6 +494,7 @@ box-shadow: inset 0px -5px 0px 0px #b52933;
 /*FOOTER*/
 
 .site-footer {
+  margin-top: 86px;
   font-size: 18px;
   line-height: 24px;
   color: #ffffff;
@@ -418,13 +503,41 @@ box-shadow: inset 0px -5px 0px 0px #b52933;
 }
 
 .site-footer ul {
+  padding: 0;
+  margin: 0;
+
   list-style: none;
 }
 
 /*FOOTER-TOP*/
 
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-information {
+  width: 380px;
+}
+
+.footer-navigation {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 550px;
+}
+
+.footer-site-menu {
+  display: flex;
+  justify-content: space-between;
+}
 .footer-site-menu a {
   color: #ffffff;
+}
+
+.product {
+  display: flex;
+  justify-content: space-between;
 }
 
 .product a {
@@ -443,7 +556,16 @@ box-shadow: inset 0px -5px 0px 0px #b52933;
 
 /*FOOTER-DOWN*/
 
+.footer-down-wrapper {
+  width: 100%;
+
+  background-color: #293449;
+}
+
 .footer-down {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
   font-size: 16px;
   line-height: 18px;
 
@@ -451,6 +573,8 @@ box-shadow: inset 0px -5px 0px 0px #b52933;
 }
 
 .footer-social {
+  display: flex;
+
   list-style: none;
 }
 
