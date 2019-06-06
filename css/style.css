@@ -439,7 +439,7 @@ svg.exit:active path {
 .site-menu {
   font-size: 17px;
   line-height: 17px;
-  padding-top: 45px; 
+  padding: 45px 0 0 0; 
 }
 
 .menu-items {
@@ -447,6 +447,7 @@ svg.exit:active path {
   flex-wrap: wrap;
   justify-content: space-around;
   margin: 0;
+  padding: 0;
 
 
   background-color: #32425c;
