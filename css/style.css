@@ -29,20 +29,20 @@ img {
   width: 1px;
   height: 1px;
   margin: -1px;
-  border: 0;
   padding: 0;
+  border: 0;
 
   white-space: nowrap;
 
   clip-path: inset(100%);
-  clip: rect(0 0 0 0);
+  clip: rect(0, 0, 0, 0);
   overflow: hidden;
-	}
-	
+}
+
 .container-wrapper {
   width: 960px;
-	margin: 0 auto;
-	padding: 0 10px;
+  margin: 0 auto;
+  padding: 0 10px;
 }
 
 /*HEADER*/
@@ -50,7 +50,7 @@ img {
 .site-header {
   display: flex;
   flex-direction: column;
-	
+
   background-color: #f3f7f8;
 }
 
@@ -64,9 +64,10 @@ img {
 
 .header-top {
   position: relative;
+
   display: flex;
 
-	font-size: 17px;
+  font-size: 17px;
   line-height: 18px;
 }
 
@@ -76,6 +77,7 @@ img {
 
 .site-logo {
   position: absolute;
+
   width: 110px;
   height: 19px;
   padding: 13px 55px 15px 55px;
@@ -87,7 +89,7 @@ img {
 .site-logo:hover,
 .site-logo:focus {
   background-color: #ca2c37;
-} 
+}
 
 .site-logo:active {
   background-color: #ba2732;
@@ -112,15 +114,15 @@ form.search {
 }
 
 .search input {
-	color: #ffffff;
-	
+  color: #ffffff;
+
   background-color: #293449;
   border: none;
 }
 
 .search input:focus {
   color: #000000;
-  
+
   background-color: #ffffff;
 }
 
@@ -132,26 +134,56 @@ form.search {
   background-color: #ffffff;
 }
 
-.search input:focus ~ .search-button path{
-	fill: #ee3643;
+.search input:focus ~ .search-button path {
+  fill: #ee3643;
 }
 
-.search input::-webkit-input-placeholder {color:#ffffff; opacity:1;}
-.search input::-moz-placeholder          {color:#ffffff; opacity:1;}
-.search input:-moz-placeholder           {color:#ffffff; opacity:1;}
-.search input:-ms-input-placeholder      {color:#ffffff; opacity:1;}
+.search input::-webkit-input-placeholder {
+  color: #ffffff;
 
-.search input[type=text]::-ms-clear {  display: none; width : 0; height: 0; }
-.search input[type=text]::-ms-reveal {  display: none; width : 0; height: 0; }
+  opacity: 1;
+}
+
+.search input::-moz-placeholder {
+  color: #ffffff; 
+
+  opacity: 1;
+}
+
+.search input:-moz-placeholder {
+  color: #ffffff;
+
+  opacity: 1;
+}
+
+.search input:-ms-input-placeholder {
+  color: #ffffff;
+
+  opacity: 1;
+}
+
+.search input[type=text]::-ms-clear {
+  display: none;
+  width : 0;
+  height: 0;
+}
+.search input[type=text]::-ms-reveal {
+  display: none;
+  width : 0;
+  height: 0;
+}
 .search input[type="search"]::-webkit-search-decoration,
 .search input[type="search"]::-webkit-search-cancel-button,
 .search input[type="search"]::-webkit-search-results-button,
-.search input[type="search"]::-webkit-search-results-decoration { display: none; }
+.search input[type="search"]::-webkit-search-results-decoration {
+  display: none;
+}
 
 /*HEADER-INTERACTIVE*/
 
 .header-interactive.bookmarks {
   position: relative;
+
   width: 96px;
   padding: 12px 0 12px 54px;
 }
@@ -179,11 +211,11 @@ form.search {
 }
 
 .header-interactive.basket::before {
-  content: "";
   position: absolute;
   top: 12px;
   left: 27px;
 
+  content: "";
   width: 15px;
   height: 15px;
 
@@ -251,7 +283,6 @@ form.search {
 .header-information {
   display: flex;
   justify-content: space-between;
-
   padding: 0;
   margin: 0;
 }
@@ -261,7 +292,7 @@ form.search {
   margin: 0;
   padding-left: 52px;
 
-	font-style: italic;
+  font-style: italic;
   font-size: 16px;
   line-height: 23px;
   color: #ee3643;
@@ -270,7 +301,7 @@ form.search {
 .contacts {
   width: 300px;
   margin: 0;
-	
+
   font-size: 14px;
   line-height: 24px;
 }
@@ -309,8 +340,8 @@ form.search {
   justify-content: space-between;
   width: 300px;
   margin: 0;
-	padding: 0;
-  
+  padding: 0;
+
   font-size: 21px;
   line-height: 21px;
 
@@ -327,6 +358,7 @@ form.search {
 
 .enter {
   position: relative;
+
   width: 46px;
   margin-left: 20px;
   padding: 12px 27px 12px 42px;
@@ -347,7 +379,7 @@ form.search {
 }
 
 .registration {
-	width: 100px;
+  width: 100px;
   margin-left: 10px;
   padding: 12px 25px;
 }
@@ -371,7 +403,7 @@ form.search {
   position: relative;
 
   padding: 12px 68px 12px 47px;
-	
+
   font-size: 21px;
   line-height: 21px;
   color: #000000;
@@ -406,8 +438,8 @@ svg.exit:active path {
 }
 
 .personal-information ul {
-	padding: 0 0 0 18px;
-	
+  padding: 0 0 0 18px;
+
   list-style: none;
 }
 
@@ -443,22 +475,21 @@ svg.exit:active path {
 }
 
 .menu-items {
-	display: flex;
+  display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   margin: 0;
   padding: 0;
 
-
   background-color: #32425c;
   box-shadow: inset 0px -5px 0px 0px #293449;
-	list-style: none;
+  list-style: none;
 }
 
 .menu-items a {
-	display: block;
-	padding: 22px 30px;
-  
+  display: block;
+  padding: 22px 30px;
+
   color: #ffffff;
 }
 
@@ -476,7 +507,7 @@ svg.exit:active path {
 .about-company {
   display: flex;
   justify-content: space-between;
-	
+
   font-size: 13px;
   line-height: 24px;
   font-weight: 700;
@@ -486,7 +517,7 @@ svg.exit:active path {
 .about-company h2 {
   margin: 0;
   padding-top: 80px;
-  
+
   font-size: 30px;
   line-height: 30px;
   font-family: "Cuprum", Arial, sans-serif;
@@ -514,9 +545,9 @@ svg.exit:active path {
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
-	font-family: "Cuprum", Arial, sans-serif;
-	color: #ffffff;
-  
+  font-family: "Cuprum", Arial, sans-serif;
+  color: #ffffff;
+
   background-color: #ee3643;
 }
 
@@ -541,10 +572,10 @@ svg.exit:active path {
 /*BREADCRUMBS*/
 
 .breadcrumbs {
-	display: flex;
-	margin: 0;
-	padding: 20px 0;
-  
+  display: flex;
+  margin: 0;
+  padding: 20px 0;
+
   list-style: none;
 }
 
@@ -554,6 +585,7 @@ svg.exit:active path {
 
 .index {
   position: absolute;
+
   width: 15px;
   height: 15px;
 
@@ -580,8 +612,8 @@ svg.exit:active path {
 
 .filtres-catalog {
   display: flex;
-	justify-content: space-between;
-	margin-bottom: 60px;
+  justify-content: space-between;
+  margin-bottom: 60px;
 }
 
 .filtres {
@@ -603,9 +635,9 @@ svg.exit:active path {
 }
 
 .filter ul {
-	margin: 0;
-	padding: 0;
-  
+  margin: 0;
+  padding: 0;
+
   list-style: none;
 }
 
@@ -634,10 +666,10 @@ svg.exit:active path {
 .catalog-list {
   display: flex;
   justify-content: space-between;
-	flex-wrap: wrap; 
-	margin: 0;
-	padding: 0;
-  
+  flex-wrap: wrap; 
+  margin: 0;
+  padding: 0;
+
   font-size: 18px;
   line-height: 20px;
   font-family: "PT Sans", Arial, sans-serif;
@@ -663,8 +695,8 @@ svg.exit:active path {
 
 .perforator-image a {
   font-size: 14px;
-	line-height: 18px;
-	font-family: "Cuprum",  Arial, sans-serif;
+  line-height: 18px;
+  font-family: "Cuprum",  Arial, sans-serif;
   text-transform: uppercase;
 }
 
@@ -686,33 +718,33 @@ svg.exit:active path {
 }
 
 .perforator-image a:nth-child(2) {
-	color: #000000;
-	
+  color: #000000;
+
   border: 2px solid #63a63e;
 }
 
 .perforator-image a:nth-child(2):hover,
 .perforator-image a:nth-child(2):focus {
-	color: #32425c;
-	
+  color: #32425c;
+
   border: 2px solid #32425c;
 }
 
 .perforator-image a:nth-child(2):active {
-	color: rgba(50, 66, 92, 0.3);
-	
+  color: rgba(50, 66, 92, 0.3);
+
   border: 2px solid rgba(50, 66, 92, 0.3);
 }
 
 .perforator-price {
   font-size: 17px;
-	line-height: 18px;
-	text-align: center;
+  line-height: 18px;
+  text-align: center;
 }
 
 .old-price {
-	color: #999999;
-	
+  color: #999999;
+
   text-decoration: line-through;
 }
 
@@ -732,8 +764,8 @@ svg.exit:active path {
 /*FOOTER*/
 
 .site-footer {
-	margin-top: 86px;
-	
+  margin-top: 86px;
+
   font-size: 18px;
   line-height: 24px;
   color: #ffffff;
@@ -742,9 +774,9 @@ svg.exit:active path {
 }
 
 .site-footer ul {
-	margin: 0;
-	padding: 0;
-  
+  margin: 0;
+  padding: 0;
+
   list-style: none;
 }
 
@@ -757,7 +789,7 @@ svg.exit:active path {
 
 .footer-top {
   position: relative;
-  
+
   display: flex;
   justify-content: space-between;
 }
@@ -775,15 +807,14 @@ svg.exit:active path {
 .footer-navigation {
   display: flex;
   flex-direction: column;
-
   width: 550px;
 }
 
 .footer-site-menu {
   display: flex;
   justify-content: space-between;
-	
 }
+
 .footer-site-menu a {
   display: block;
   padding-top: 39px;
@@ -810,7 +841,7 @@ svg.exit:active path {
 }
 
 .product a:active {
-	color: #ad956f;
+  color: #ad956f;
 
   text-decoration: none;
 }
@@ -876,13 +907,14 @@ svg.exit:active path {
 
 .feedback a:active,
 .creator a:active {
-	color: #ee3643;
-	
-	text-decoration: none;
+  color: #ee3643;
+
+  text-decoration: none;
 }
 
-/*.modal-write-message {
-    font-size: 18px;
+/*
+.modal-write-message {
+  font-size: 18px;
   line-height: 18px;
 
   background-color: #ffffff;
@@ -915,5 +947,6 @@ svg.exit:active path {
 
 .modal-close {
   color:#ee3643;
-}*/
+}
+*/
 
