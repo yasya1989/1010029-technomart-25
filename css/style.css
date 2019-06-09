@@ -40,7 +40,7 @@ img {
 }
 
 .container-wrapper {
-  width: 960px;
+  width: 940px;
   margin: 0 auto;
   padding: 0 10px;
 }
@@ -277,7 +277,7 @@ form.search {
 
 .header-down-inner {
   display: flex;
-  align-items: center;
+  justify-content: space-between;
 }
 
 .header-information {
@@ -488,7 +488,7 @@ svg.exit:active path {
 
 .menu-items a {
   display: block;
-  padding: 22px 30px;
+  padding: 19px 29px 24px 29px;
 
   color: #ffffff;
 }
@@ -507,6 +507,7 @@ svg.exit:active path {
 .about-company {
   display: flex;
   justify-content: space-between;
+  padding: 80px 0 0 0;
 
   font-size: 13px;
   line-height: 24px;
@@ -516,7 +517,7 @@ svg.exit:active path {
 
 .about-company h2 {
   margin: 0;
-  padding-top: 80px;
+  padding: 0;
 
   font-size: 30px;
   line-height: 30px;
@@ -526,17 +527,33 @@ svg.exit:active path {
 
 .company-information {
   width: 540px;
+  margin: 0;
+  padding: 0;
+}
+
+.company-information p {
+  margin: 0;
+  padding: 25px 0 0 0;
 }
 
 .transport {
   margin: 0;
+  padding: 15px 0 0 35px;
   font-size: 18px;
   line-height: 20px;
-  font-family: "Cuprum", Arial, sans-serif;
+}
+
+.transport li {
+  padding-bottom: 20px;
 }
 
 .contacts-map {
   width: 300px;
+}
+
+.contacts-map p {
+  margin: 0;
+  padding: 26px 0 33px 0;
 }
 
 .button-company {
@@ -552,11 +569,13 @@ svg.exit:active path {
 }
 
 .button-company.information {
+  margin-top: 20px;
   padding: 10px 40px;
 }
 
 .button-company.contacts {
   width: 237px;
+  margin-top: 30px;
   padding: 10px 0 10px 63px;
 }
 
@@ -572,22 +591,43 @@ svg.exit:active path {
 /*BREADCRUMBS*/
 
 .breadcrumbs {
+  position: relative;
   display: flex;
   margin: 0;
-  padding: 20px 0;
+  padding: 22px 0;
+
+  text-transform: uppercase;
 
   list-style: none;
 }
 
 .breadcrumbs a {
+  padding-left: 39px;
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
   color: #000000;
 }
 
-.index {
+.breadcrumbs a::before {
+  content: "";
   position: absolute;
 
-  width: 15px;
-  height: 15px;
+  background-image: url("../img/icon-right-small.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+  width: 7px;
+  height: 12px;
+}
+
+.breadcrumbs-current {
+  padding-left: 41px;
+}
+
+.index {
+  width: 10px;
+  height: 12px;
 
   background-image: url("../img/icon-home.svg");
   background-repeat: no-repeat;
@@ -596,8 +636,8 @@ svg.exit:active path {
 
 /*PERFORATOR*/
 
-.perforators-header {	
-  margin-bottom: 20px;
+.perforators-header h2 {	
+  margin: 0 0 20px 0;
   padding: 30px;
 
   font-size: 30px;
@@ -629,6 +669,7 @@ svg.exit:active path {
 }
 
 .filter legend {
+  padding-bottom: 12px;
   font-size: 17px;
   line-height: 30px;
   font-weight: bold;
@@ -642,6 +683,8 @@ svg.exit:active path {
 }
 
 .filter-option {
+  padding-bottom: 17px;
+
   font-size: 15px;
   line-height: 20px;
   font-family: "PT Sans", Arial, sans-serif;
@@ -649,6 +692,11 @@ svg.exit:active path {
 }
 
 .filter-button {
+  margin-top: 76px;
+  padding: 9px;
+ 
+  width: 138px;
+
   font-size: 13px;
   line-height: 18px;
   text-transform: uppercase;
@@ -687,6 +735,12 @@ svg.exit:active path {
 
 .perforator-title {
   text-align: center;
+}
+
+
+.perforator-title h4 {
+  margin: 0;
+  padding: 0;
 }
 
 .perforator-image {
@@ -748,7 +802,14 @@ svg.exit:active path {
   text-decoration: line-through;
 }
 
+.old-price.no-price {
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
 .catalog-item-price {
+
   position: relative;
 
   color: #ffffff;
@@ -783,7 +844,6 @@ svg.exit:active path {
 /*FOOTER-TOP*/
 
 .site-logo.footer {
-  height: 22px;
   padding: 21px 42px 25px 42px;
 }
 
@@ -857,12 +917,17 @@ svg.exit:active path {
 .footer-down {
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
-
+  align-items: center;
+  padding: 20px 36px;
+  
   font-size: 16px;
   line-height: 18px;
 
   background-color: #293449;
+}
+
+.copyright {
+  width: 300px;
 }
 
 .footer-social {
@@ -870,6 +935,7 @@ svg.exit:active path {
   flex: wrap;
   justify-content: space-between;
   width: 133px;
+  padding-right: 107px;
 
   list-style: none;
 }
