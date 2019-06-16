@@ -93,9 +93,9 @@
           <p>Вы можете забрать товар сами,<br>
             заехав в наш офис:</p>
           <a href="#">
-            <img src="img/map-small.jpg" width="300" height="158" alt="Офис компании по адресу ул. Большая конюшенная, д. 19, Санкт-Петрербург">
+            <img class="map-small" src="img/map-small.jpg" width="300" height="158" alt="Офис компании по адресу ул. Большая конюшенная, д. 19, Санкт-Петрербург">
           </a>
-          <a class="button-company contacts" href="#">Заблудились? Напишите нам</a>
+          <a class="button-company contact" href="#">Заблудились? Напишите нам</a>
         </div>
       </div>
     </main>
@@ -177,23 +177,27 @@
     <div class="modal modal-write-message">
       <h2 class="visually-hidden">Написать письмо</h2>
       <form class="write-message" method="get" action="https://echo.htmlacademy.ru">
-        <p class="appoitment-item">
-          <label>Ваше имя
-            <input type="text" name="name" placeholder="Имя и Фамилия">
-          </label>
-        </p>
+        <div class="modal-container">
+          <div class="user-data">
+            <p class="appoitment-item">
+              <label>Ваше имя
+                <input type="text" name="name" placeholder="Имя и Фамилия">
+              </label>
+            </p>
 
-        <p class="appoitment-item">
-          <label>Ваш e-mail
-            <input type="email" name="email" placeholder="email@example.com">
-          </label>
-        </p>
+            <p class="appoitment-item">
+              <label>Ваш e-mail
+                <input type="email" name="email" placeholder="email@example.com">
+              </label>
+            </p>
+          </div>
 
-        <p class="appoitment-item">
-          <label>Текст письма
-            <textarea name="text" placeholder="В свободной форме"></textarea>
-          </label>
-        </p>
+          <p class="appoitment-item-text">
+            <label>Текст письма<br>
+              <textarea name="text" placeholder="В свободной форме" rows="5"></textarea>
+            </label>
+          </p>
+        </div>
 
         <p class="send-message-button">
           <button class="send-button" type="submit" name="send-button">Отправить</button>
@@ -206,7 +210,9 @@
     <div class="modal modal-map">
       <h2 class="visually-hidden">Большая карта</h2>
       <img src="img/map-big.jpg" width="970" height="476" alt="Офис компании по адресу ул. Большая конюшенная, д. 19, Санкт-Петрербург">
-      <button class="modal-close" type="button">Закрыть</button>
+      <button class="modal-close-map" type="button">Закрыть</button>
     </div>
+
+    <script src="js/popup.js"></script>
   </body>
 </html>
